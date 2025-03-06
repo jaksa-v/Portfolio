@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets";
-import svgl from "../../public/svgl.png";
-import stockin from "../../public/stockin.png";
+import aiquizard from "../../public/ai-quizard.png";
+import zakazitermin from "../../public/zakazitermin.png";
+import slackclone from "../../public/slack-clone.png";
+import driveclone from "../../public/drive-clone.png";
 import Layout from "@/layouts/Layout.astro";
 import Nav from "@/components/nav.astro";
 import Footer from "@/components/footer.astro";
@@ -16,18 +18,32 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "StockIn",
-    image: stockin as ImageMetadata,
-    link: "https://github.com/gothsec/stockin-demo",
-    preview: "https://stockin-demo.vercel.app",
+    title: "AI Quizard",
+    image: aiquizard as ImageMetadata,
+    link: "https://github.com/jaksa-v/ai-quizard",
+    preview: "https://ai-quizard.vercel.app",
     status: "In Development",
   },
   {
-    title: "Svgl.app",
-    image: svgl as ImageMetadata,
-    link: "https://github.com/pheralb/svgl",
-    preview: "https://svgl.app",
-    status: "Contributor",
+    title: "Zakazi Termin",
+    image: zakazitermin as ImageMetadata,
+    link: "https://github.com/jaksa-v/zakazitermin",
+    preview: "https://zakazitermin.vercel.app",
+    status: "In Development",
+  },
+  {
+    title: "Slack Clone",
+    image: slackclone as ImageMetadata,
+    link: "https://github.com/jaksa-v/slack-clone",
+    preview: "https://slack-clone-omega-gold.vercel.app",
+    status: "In Development",
+  },
+  {
+    title: "Drive Clone",
+    image: driveclone as ImageMetadata,
+    link: "https://github.com/jaksa-v/drive-clone",
+    preview: "https://jaksas-drive-clone.netlify.app/",
+    status: "In Development",
   },
 ];
 ---
